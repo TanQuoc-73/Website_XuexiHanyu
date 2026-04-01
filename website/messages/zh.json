@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "title": "学习汉语 - 在线学中文",
+    "description": "免费中文学习网站，从HSK 1到HSK 6。课程、词汇、语法、练习和词典。"
+  },
+  "nav": {
+    "home": "首页",
+    "lessons": "课程",
+    "vocabulary": "词汇",
+    "grammar": "语法",
+    "practice": "练习",
+    "dictionary": "词典"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册",
+    "modalDescription": "登录以开始您的中文学习之旅",
+    "emailPlaceholder": "您的邮箱",
+    "passwordPlaceholder": "密码",
+    "confirmPasswordPlaceholder": "确认密码",
+    "namePlaceholder": "姓名",
+    "forgotPassword": "忘记密码？",
+    "orContinueWith": "或通过以下方式继续",
+    "noAccount": "还没有账号？",
+    "hasAccount": "已有账号？"
+  },
+  "hero": {
+    "title": "学习中文",
+    "titleHighlight": "轻松又高效",
+    "description": "从HSK 1到HSK 6的完整课程体系。词汇、语法、练习及多种免费辅助工具。",
+    "ctaStart": "立即开始学习",
+    "ctaExplore": "探索词汇"
+  },
+  "features": {
+    "title": "为什么选择学习汉语？",
+    "subtitle": "全面的中文学习平台",
+    "lessons": {
+      "title": "系统化课程",
+      "description": "按照HSK标准设计的课程，从基础到高级。"
+    },
+    "vocabulary": {
+      "title": "丰富词汇",
+      "description": "数千个词汇，配有拼音、翻译和例句。"
+    },
+    "grammar": {
+      "title": "详细语法",
+      "description": "清晰的语法解释，配有实用例句。"
+    },
+    "practice": {
+      "title": "多样练习",
+      "description": "选择题、闪卡、书写练习和听力练习。"
+    },
+    "dictionaryFeature": {
+      "title": "便捷词典",
+      "description": "快速中文查询，配有拼音发音。"
+    },
+    "progress": {
+      "title": "跟踪进度",
+      "description": "查看您的个人学习统计和进度。"
+    }
+  },
+  "hsk": {
+    "title": "HSK等级",
+    "subtitle": "选择适合你的等级",
+    "words": "个词"
+  },
+  "cta": {
+    "title": "准备好开始你的旅程了吗？",
+    "description": "免费注册，今天就开始学习中文。",
+    "button": "免费注册"
+  },
+  "footer": {
+    "description": "免费中文学习网站。\n从HSK 1到HSK 6的课程体系。",
+    "learning": "学习",
+    "tools": "工具",
+    "other": "其他",
+    "writingPractice": "书写练习",
+    "listeningPractice": "听力练习",
+    "flashcard": "闪卡",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "terms": "条款",
+    "copyright": "© 2026 学习汉语 (Xuexi Hanyu). 版权所有。"
+  },
+  "language": {
+    "label": "语言",
+    "vi": "Tiếng Việt",
+    "en": "English",
+    "zh": "中文"
+  },
+  "pandaChat": {
+    "name": "熊猫助手",
+    "subtitle": "有什么问题尽管问我！",
+    "greeting": "你好！🎋 我是熊猫，你的中文学习助手。有什么问题尽管问我！",
+    "placeholder": "输入消息...",
+    "replies": {
+      "hello": "你好！😊 很高兴见到你！今天想学什么？",
+      "hsk": "HSK共有6个等级，从HSK 1（入门）到HSK 6（高级）。你可以从HSK 1开始，逐步提升！📚",
+      "vocabulary": "词汇非常重要！去词汇区按主题和HSK等级学习吧。推荐使用闪卡来加深记忆！🀄",
+      "grammar": "中文语法没那么难！去语法区看看详细的讲解和实用例句吧。📝",
+      "lesson": "去课程区开始学习吧！课程按HSK标准编排，由简到难。🎯",
+      "practice": "练习是关键！选择题、闪卡、书写和听力练习都在等你。💪",
+      "thanks": "不客气！祝你学习愉快！🐼🎋",
+      "name": "我是熊猫 🐼，学习汉语网站的中文学习助手！",
+      "default": "嗯，我没太明白 🤔 你可以问我关于课程、词汇、语法或HSK等级的问题！"
+    }
+  }
+}

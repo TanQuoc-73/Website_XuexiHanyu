@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "学习汉语 - Learn Chinese Online",
+    "description": "Free Chinese learning website from HSK 1 to HSK 6. Lessons, vocabulary, grammar, practice and dictionary."
+  },
+  "nav": {
+    "home": "Home",
+    "lessons": "Lessons",
+    "resources": "Resources",
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "practice": "Practice",
+    "dictionary": "Dictionary",
+    "hsk1": "HSK 1",
+    "hsk2": "HSK 2",
+    "hsk3": "HSK 3",
+    "hsk4": "HSK 4",
+    "hsk5": "HSK 5",
+    "hsk6": "HSK 6",
+    "hsk1Desc": "The most basic vocabulary and grammar.",
+    "hsk2Desc": "Expand basic daily communication.",
+    "hsk3Desc": "Reach lower-intermediate level proficiency.",
+    "hsk4Desc": "Discuss more complex and varied topics.",
+    "hsk5Desc": "Read newspapers and watch movies without subs.",
+    "hsk6Desc": "Master the language like a native speaker.",
+    "vocabularyDesc": "Learn words by theme and HSK level.",
+    "grammarDesc": "Detailed explanation of core structures.",
+    "dictionaryDesc": "Quick Chinese-English-Vietnamese lookup."
+  },
+  "auth": {
+    "login": "Sign in",
+    "register": "Sign up",
+    "modalDescription": "Sign in to start your Chinese learning journey",
+    "emailPlaceholder": "Your email",
+    "passwordPlaceholder": "Password",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "namePlaceholder": "Full name",
+    "forgotPassword": "Forgot password?",
+    "orContinueWith": "or continue with",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "hero": {
+    "title": "Learn Chinese",
+    "titleHighlight": "easy & effective",
+    "description": "Complete lesson system from HSK 1 to HSK 6. Vocabulary, grammar, practice and many free support tools.",
+    "ctaStart": "Start learning now",
+    "ctaExplore": "Explore vocabulary"
+  },
+  "features": {
+    "title": "Why choose 学习汉语?",
+    "subtitle": "A comprehensive Chinese learning platform",
+    "lessons": {
+      "title": "Structured lessons",
+      "description": "Curriculum designed following HSK standards, from basic to advanced."
+    },
+    "vocabulary": {
+      "title": "Rich vocabulary",
+      "description": "Thousands of words with pinyin, translations and example sentences."
+    },
+    "grammar": {
+      "title": "Detailed grammar",
+      "description": "Clear grammar explanations with practical examples."
+    },
+    "practice": {
+      "title": "Diverse practice",
+      "description": "Quizzes, flashcards, writing practice and listening exercises."
+    },
+    "dictionaryFeature": {
+      "title": "Handy dictionary",
+      "description": "Quick Chinese-English lookup with pinyin pronunciation."
+    },
+    "progress": {
+      "title": "Track progress",
+      "description": "View your personal learning statistics and progress."
+    }
+  },
+  "vocabulary": {
+    "title": "HSK Vocabulary",
+    "subtitle": "Lookup and learn Chinese vocabulary according to HSK 1-6 standards",
+    "noWordsFound": "No vocabulary found. Please start the backend server."
+  },
+  "hsk": {
+    "title": "HSK Levels",
+    "subtitle": "Choose the level that suits you",
+    "words": "words"
+  },
+  "cta": {
+    "title": "Ready to start your journey?",
+    "description": "Sign up for free and start learning Chinese today.",
+    "button": "Sign up free"
+  },
+  "footer": {
+    "description": "Free Chinese learning website.\nLesson system from HSK 1 to HSK 6.",
+    "learning": "Learning",
+    "tools": "Tools",
+    "other": "Other",
+    "writingPractice": "Writing practice",
+    "listeningPractice": "Listening practice",
+    "flashcard": "Flashcard",
+    "about": "About",
+    "contact": "Contact",
+    "terms": "Terms",
+    "copyright": "© 2026 学习汉语 (Xuexi Hanyu). All rights reserved."
+  },
+  "language": {
+    "label": "Language",
+    "vi": "Tiếng Việt",
+    "en": "English",
+    "zh": "中文"
+  },
+  "pandaChat": {
+    "name": "Panda Assistant",
+    "subtitle": "Ask me anything!",
+    "greeting": "Hello! 🎋 I'm Panda, your Chinese learning assistant. Ask me anything!",
+    "placeholder": "Type a message...",
+    "replies": {
+      "hello": "Hello! 😊 Nice to meet you! What would you like to learn today?",
+      "hsk": "HSK has 6 levels, from HSK 1 (beginner) to HSK 6 (advanced). You can start from HSK 1 and work your way up! 📚",
+      "vocabulary": "Vocabulary is key! Check out the Vocabulary section to learn by topic and HSK level. I recommend using Flashcards for better retention! 🀄",
+      "grammar": "Chinese grammar isn't too hard! Visit the Grammar section for detailed explanations with real examples. 📝",
+      "lesson": "Head to the Lessons section to get started! Lessons are organized by HSK standards, from easy to advanced. 🎯",
+      "practice": "Practice makes perfect! Quizzes, flashcards, writing and listening exercises are waiting for you. 💪",
+      "thanks": "You're welcome! Happy learning! 🐼🎋",
+      "name": "I'm Panda 🐼, your Chinese learning assistant on 学习汉语!",
+      "default": "Hmm, I didn't quite get that 🤔 You can ask me about lessons, vocabulary, grammar or HSK levels!"
+    }
+  }
+}

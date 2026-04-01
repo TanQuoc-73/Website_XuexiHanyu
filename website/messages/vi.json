@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "学习汉语 - Học tiếng Trung online",
+    "description": "Website học tiếng Trung miễn phí từ HSK 1 đến HSK 6. Bài học, từ vựng, ngữ pháp, luyện tập và từ điển."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "lessons": "Bài học",
+    "resources": "Tài nguyên",
+    "vocabulary": "Từ vựng",
+    "grammar": "Ngữ pháp",
+    "practice": "Luyện tập",
+    "dictionary": "Từ điển",
+    "hsk1": "HSK 1",
+    "hsk2": "HSK 2",
+    "hsk3": "HSK 3",
+    "hsk4": "HSK 4",
+    "hsk5": "HSK 5",
+    "hsk6": "HSK 6",
+    "hsk1Desc": "Từ vựng và ngữ pháp cơ bản nhất.",
+    "hsk2Desc": "Mở rộng giao tiếp cơ bản hằng ngày.",
+    "hsk3Desc": "Đạt trình độ trung cấp sơ cấp.",
+    "hsk4Desc": "Thảo luận các chủ đề phức tạp hơn.",
+    "hsk5Desc": "Đọc báo và xem phim không cần sub.",
+    "hsk6Desc": "Trình độ cao cấp, thành thạo như người bản xứ.",
+    "vocabularyDesc": "Học từ vựng theo chủ đề và cấp độ.",
+    "grammarDesc": "Chi tiết các cấu trúc ngữ pháp quan trọng.",
+    "dictionaryDesc": "Tra cứu nhanh Trung-Việt, Việt-Trung."
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "modalDescription": "Đăng nhập để bắt đầu hành trình học tiếng Trung",
+    "emailPlaceholder": "Email của bạn",
+    "passwordPlaceholder": "Mật khẩu",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu",
+    "namePlaceholder": "Họ và tên",
+    "forgotPassword": "Quên mật khẩu?",
+    "orContinueWith": "hoặc tiếp tục với",
+    "noAccount": "Chưa có tài khoản?",
+    "hasAccount": "Đã có tài khoản?"
+  },
+  "hero": {
+    "title": "Học tiếng Trung",
+    "titleHighlight": "dễ dàng & hiệu quả",
+    "description": "Hệ thống bài học từ HSK 1 đến HSK 6. Từ vựng, ngữ pháp, luyện tập và nhiều công cụ hỗ trợ hoàn toàn miễn phí.",
+    "ctaStart": "Bắt đầu học ngay",
+    "ctaExplore": "Khám phá từ vựng"
+  },
+  "features": {
+    "title": "Tại sao chọn 学习汉语?",
+    "subtitle": "Nền tảng học tiếng Trung toàn diện cho người Việt",
+    "lessons": {
+      "title": "Bài học có hệ thống",
+      "description": "Chương trình học được thiết kế theo chuẩn HSK, từ cơ bản đến nâng cao."
+    },
+    "vocabulary": {
+      "title": "Từ vựng phong phú",
+      "description": "Hàng nghìn từ vựng với pinyin, nghĩa tiếng Việt và câu ví dụ."
+    },
+    "grammar": {
+      "title": "Ngữ pháp chi tiết",
+      "description": "Giải thích ngữ pháp rõ ràng với nhiều ví dụ thực tế."
+    },
+    "practice": {
+      "title": "Luyện tập đa dạng",
+      "description": "Bài tập trắc nghiệm, flashcard, luyện viết và luyện nghe."
+    },
+    "dictionaryFeature": {
+      "title": "Từ điển tiện lợi",
+      "description": "Tra cứu nhanh từ vựng Trung-Việt với phiên âm pinyin."
+    },
+    "progress": {
+      "title": "Theo dõi tiến trình",
+      "description": "Xem thống kê học tập và tiến trình cá nhân của bạn."
+    }
+  },
+  "vocabulary": {
+    "title": "Kho từ vựng HSK",
+    "subtitle": "Tra cứu và học tập từ vựng tiếng Trung theo chuẩn HSK 1-6",
+    "noWordsFound": "Không tìm thấy từ vựng nào. Vui lòng kiểm tra lại kết nối Server."
+  },
+  "hsk": {
+    "title": "Trình độ HSK",
+    "subtitle": "Chọn cấp độ phù hợp với bạn",
+    "words": "từ"
+  },
+  "cta": {
+    "title": "Sẵn sàng bắt đầu hành trình?",
+    "description": "Đăng ký miễn phí và bắt đầu học tiếng Trung ngay hôm nay.",
+    "button": "Đăng ký miễn phí"
+  },
+  "footer": {
+    "description": "Website học tiếng Trung miễn phí.\nHệ thống bài học từ HSK 1 đến HSK 6.",
+    "learning": "Học tập",
+    "tools": "Công cụ",
+    "other": "Khác",
+    "writingPractice": "Luyện viết chữ",
+    "listeningPractice": "Luyện nghe",
+    "flashcard": "Flashcard",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "terms": "Điều khoản",
+    "copyright": "© 2026 学习汉语 (Xuexi Hanyu). All rights reserved."
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "en": "English",
+    "zh": "中文"
+  },
+  "pandaChat": {
+    "name": "Panda Trợ lý",
+    "subtitle": "Hỏi mình bất cứ điều gì!",
+    "greeting": "Xin chào! 🎋 Mình là Panda, trợ lý học tiếng Trung của bạn. Hỏi mình bất cứ điều gì nhé!",
+    "placeholder": "Nhập tin nhắn...",
+    "replies": {
+      "hello": "Xin chào! 😊 Rất vui được gặp bạn! Bạn muốn học gì hôm nay?",
+      "hsk": "HSK có 6 cấp độ, từ HSK 1 (cơ bản) đến HSK 6 (nâng cao). Bạn có thể bắt đầu từ HSK 1 rồi tiến lên dần nhé! 📚",
+      "vocabulary": "Từ vựng rất quan trọng! Vào mục Từ vựng để học theo từng chủ đề và cấp độ HSK nhé. Mình gợi ý bạn dùng Flashcard để nhớ lâu hơn! 🀄",
+      "grammar": "Ngữ pháp tiếng Trung không quá khó đâu! Vào mục Ngữ pháp để xem các cấu trúc được giải thích chi tiết với ví dụ thực tế nhé. 📝",
+      "lesson": "Bạn hãy vào mục Bài học để bắt đầu! Các bài học được sắp xếp theo chuẩn HSK, từ dễ đến khó. 🎯",
+      "practice": "Luyện tập là chìa khóa! Có trắc nghiệm, flashcard, luyện viết và luyện nghe đang chờ bạn. 💪",
+      "thanks": "Không có gì! Chúc bạn học vui nhé! 🐼🎋",
+      "name": "Mình là Panda 🐼, trợ lý học tiếng Trung của bạn trên 学习汉语!",
+      "default": "Hmm, mình chưa hiểu lắm 🤔 Bạn có thể hỏi về bài học, từ vựng, ngữ pháp hoặc HSK nhé!"
+    }
+  }
+}

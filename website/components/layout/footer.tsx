@@ -1,42 +1,95 @@
-import Link from "next/link";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
+  const tNav = useTranslations("nav");
+  const tFooter = useTranslations("footer");
+
+  const footerLinks = {
+    learn: [
+      { label: tNav("lessons"), href: "/lessons" as const },
+      { label: tNav("vocabulary"), href: "/vocabulary" as const },
+      { label: tNav("grammar"), href: "/grammar" as const },
+      { label: tNav("practice"), href: "/practice" as const },
+    ],
+    tools: [
+      { label: tNav("dictionary"), href: "/dictionary" as const },
+      { label: tFooter("writingPractice"), href: "/practice/writing" as const },
+      { label: tFooter("listeningPractice"), href: "/practice/listening" as const },
+      { label: tFooter("flashcard"), href: "/practice/flashcard" as const },
+    ],
+    about: [
+      { label: tFooter("about"), href: "/about" as const },
+      { label: tFooter("contact"), href: "/contact" as const },
+      { label: tFooter("terms"), href: "/terms" as const },
+    ],
+  };
+
   return (
-    <footer className="border-t border-zinc-200 bg-zinc-50">
+    <footer className="border-t border-border bg-muted/50">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">🀄</span>
-              <span className="text-lg font-bold text-zinc-900">学习汉语</span>
-            </div>
-            <p className="mt-3 text-sm text-zinc-500">
-              Website học tiếng Trung miễn phí. Từ HSK 1 đến HSK 6.
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          {/* Brand */}
+          <div className="col-span-2 md:col-span-1">
+            <Link href="/" className="flex items-center gap-2.5">
+              <span className="text-3xl leading-none">🀄</span>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold leading-tight text-foreground">学习汉语</span>
+                <span className="text-[10px] font-medium leading-tight text-muted-foreground">Xuexi Hanyu</span>
+              </div>
+            </Link>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              {tFooter("description")}
             </p>
           </div>
 
+          {/* Learning */}
           <div>
-            <h3 className="text-sm font-semibold text-zinc-900">Học tập</h3>
-            <ul className="mt-3 space-y-2">
-              <li><Link href="/lessons" className="text-sm text-zinc-500 hover:text-zinc-700">Bài học</Link></li>
-              <li><Link href="/vocabulary" className="text-sm text-zinc-500 hover:text-zinc-700">Từ vựng</Link></li>
-              <li><Link href="/grammar" className="text-sm text-zinc-500 hover:text-zinc-700">Ngữ pháp</Link></li>
-              <li><Link href="/practice" className="text-sm text-zinc-500 hover:text-zinc-700">Luyện tập</Link></li>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">{tFooter("learning")}</h3>
+            <ul className="mt-4 space-y-2.5">
+              {footerLinks.learn.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Tools */}
           <div>
-            <h3 className="text-sm font-semibold text-zinc-900">Công cụ</h3>
-            <ul className="mt-3 space-y-2">
-              <li><Link href="/dictionary" className="text-sm text-zinc-500 hover:text-zinc-700">Từ điển</Link></li>
-              <li><Link href="/practice/writing" className="text-sm text-zinc-500 hover:text-zinc-700">Luyện viết chữ</Link></li>
-              <li><Link href="/practice/listening" className="text-sm text-zinc-500 hover:text-zinc-700">Luyện nghe</Link></li>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">{tFooter("tools")}</h3>
+            <ul className="mt-4 space-y-2.5">
+              {footerLinks.tools.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Other */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">{tFooter("other")}</h3>
+            <ul className="mt-4 space-y-2.5">
+              {footerLinks.about.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-zinc-200 pt-8 text-center">
-          <p className="text-sm text-zinc-400">© 2026 学习汉语. All rights reserved.</p>
+        <div className="mt-10 border-t border-border pt-6 text-center">
+          <p className="text-sm text-muted-foreground">{tFooter("copyright")}</p>
         </div>
       </div>
     </footer>
