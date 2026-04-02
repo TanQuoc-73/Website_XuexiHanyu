@@ -17,7 +17,7 @@ public class WordService {
         return wordRepository.findAll();
     }
 
-    public List<Word> getWordsByHskLevel(String hskLevel) {
+    public List<Word> getWordsByHskLevel(Integer hskLevel) {
         return wordRepository.findByHskLevel(hskLevel);
     }
 

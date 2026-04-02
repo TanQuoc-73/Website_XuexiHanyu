@@ -5,46 +5,42 @@ Bảng theo dõi tiến độ hoàn thành các tính năng của dự án.
 ## 1. Cơ sở dữ liệu (Database / CSDL)
 - [x] Thiết kế Schema cho bảng `users` và `words`.
 - [x] Tạo file script SQL [xuexi_hanyu.sql](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/xuexi_hanyu.sql) để khởi tạo.
-- [x] Nạp dữ liệu mẫu (Seed data) cho HSK 1.
+- [x] Triển khai quan hệ Relational: `Category`, `Sentence`, `UserWordProgress`, `QuizHistory`.
+- [x] Nạp dữ liệu mẫu (Seed data) tự động cho HSK 1.
+- [x] Tích hợp Seeder từ file JSON (`complete.min.json`).
 - [ ] Thiết kế bảng cho `lessons` (bài học) và `grammar` (ngữ pháp).
 
 ## 2. Backend (BE - Spring Boot)
-- [x] Cấu hình kết nối PostgreSQL trong [application.properties](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/server/src/main/resources/application.properties).
-- [x] Module Từ vựng (Vocabulary):
-    - [x] Entity [Word.java](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/server/src/main/java/tanquoc73/app/entity/Word.java).
-    - [x] Repository [WordRepository.java](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/server/src/main/java/tanquoc73/app/repository/WordRepository.java).
-    - [x] Service [WordService.java](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/server/src/main/java/tanquoc73/app/service/WordService.java).
-    - [x] Controller [WordController.java](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/server/src/main/java/tanquoc73/app/controller/WordController.java) (`/api/words`).
-    - [x] Tự động nạp dữ liệu [WordSeeder.java](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/server/src/main/java/tanquoc73/app/config/WordSeeder.java).
+- [x] Cấu hình kết nối PostgreSQL.
+- [x] Module Từ vựng (Vocabulary) - **Nâng cấp Quan hệ**:
+    - [x] Entity: `Word`, `Sentence`, `Category`, `UserWordProgress`, `QuizHistory`.
+    - [x] Repositories & Services tương ứng.
+    - [x] Controller `/api/words` hỗ trợ phân loại theo HSK Level.
+- [x] **Security & Stability**:
+    - [x] Triển khai `SecurityConfig` cho phép truy cập API công khai (`permitAll`).
+    - [x] Cấu hình `JacksonConfig` hỗ trợ Java Time và bean management.
+    - [x] Xử lý lỗi đệ quy JSON (Infinite Recursion) bằng `@JsonIgnore`.
 - [ ] Module Người dùng (User):
     - [x] Entity cơ bản.
     - [ ] Hệ thống Authentication (JWT / Spring Security).
-- [ ] Module Bài học & Ngữ pháp (Đang chờ triển khai).
 
 ## 3. Frontend (FE - Next.js)
 - [x] Cấu hình khung dự án (Next.js 16, Tailwind, Framer Motion).
-- [x] Trang chủ (Landing Page) với giao diện hiện đại.
-- [x] Thanh điều hướng (Header/Nav):
-    - [x] Sử dụng **Shadcn/ui DropdownMenu** chuyên nghiệp.
-    - [x] Hỗ trợ mở bằng cách **Click** (thay vì Hover).
-    - [x] Layout gọn gàng, không bị nhảy dòng, tối ưu hóa hiển thị.
-    - [x] Tích hợp HSK Levels (1-6) và Nhóm tài nguyên.
-- [x] Trang Từ vựng [vocabulary/page.tsx](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/website/app/%5Blocale%5D/vocabulary/page.tsx):
-    - [x] Hiển thị danh sách thẻ từ vựng (Hanzi, Pinyin, Nghĩa).
-    - [x] Kết nối API với Backend.
-- [ ] Trang Bài học (`/lessons`) - *Chờ triển khai*.
-- [ ] Trang Ngữ pháp (`/grammar`) - *Chờ triển khai*.
+- [x] **Tích hợp Backend (Integration)**:
+    - [x] Đồng bộ Type System (TypeScript) với Schema mới.
+    - [x] Cập nhật `vocabularyService` kết nối trực tiếp với Spring Boot API.
+    - [x] Trang `/vocabulary` hiển thị dữ liệu thực tế từ Database (Hiển thị nhiều câu ví dụ).
+- [x] UI/UX:
+    - [x] Trang chủ (Landing Page) hiện đại.
+    - [x] Thanh điều hướng (Header/Nav) với Dropdown chuyên nghiệp.
+    - [x] Hỗ trợ đa ngôn ngữ (vi/en) cho tất cả các trang chính.
 
 ## 4. Trợ lý AI (Panda 🐼)
 - [x] Tích hợp Google Gemini 2.0 Flash.
-- [x] API Chat đơn bày (`/api/chat`).
+- [x] API Chat đơn giản (`/api/chat`).
 - [x] Thiết lập tính cách "Gấu Panda" thân thiện, hỗ trợ song ngữ VI/EN.
 - [ ] Tính năng AI chỉnh sửa lỗi ngữ pháp.
 
-## 5. Đa ngôn ngữ (i18n)
-- [x] Cấu hình `next-intl`.
-- [x] Bản dịch [vi.json](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/website/messages/vi.json) và [en.json](file:///c:/Users/cutor/Desktop/Project/Xuexi_Hanyu_Website/website/messages/en.json).
-
 ---
 
-*Cập nhật lần cuối: 14:01, 01/04/2026*
+*Cập nhật lần cuối: 20:05, 01/04/2026*

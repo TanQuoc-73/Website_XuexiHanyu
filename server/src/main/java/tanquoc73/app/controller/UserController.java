@@ -2,7 +2,6 @@ package tanquoc73.app.controller;
 
 import java.util.List;
 
-import org.springframework.boot.security.autoconfigure.SecurityProperties.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 import tanquoc73.app.service.UserService;
 
 import tanquoc73.app.entity.User;
-import tanquoc73.app.repository.*;
 
 
 @RestController

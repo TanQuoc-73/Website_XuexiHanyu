@@ -2,16 +2,33 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/a
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const url = `${API_BASE_URL}${endpoint}`;
+  
+  // Get token from localStorage
+  const token = typeof window !== "undefined" ? localStorage.getItem("auth_token") : null;
+  
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    ...((options?.headers as Record<string, string>) || {}),
+  };
+  
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+
   const res = await fetch(url, {
-    headers: {
-      "Content-Type": "application/json",
-      ...options?.headers,
-    },
     ...options,
+    headers,
   });
 
   if (!res.ok) {
-    throw new Error(`API Error: ${res.status} ${res.statusText}`);
+    const errorData = await res.json().catch(() => ({}));
+    const message =
+      errorData.message ||
+      errorData.detail ||
+      errorData.error ||
+      errorData.title ||
+      `API Error: ${res.status} ${res.statusText}`;
+    throw new Error(message);
   }
 
   return res.json();

@@ -3,11 +3,10 @@ package tanquoc73.app.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import org.springframework.boot.security.autoconfigure.SecurityProperties.User;
+import tanquoc73.app.entity.User;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
-import tanquoc73.app.entity.*;
 import tanquoc73.app.repository.UserRepository;
 
 @Service
@@ -17,6 +16,7 @@ public class UserService {
 
     public User createUser(User user){
         user.setCreatedAt(LocalDateTime.now());
+        return userRepository.save(user);
     }
 
     public List<User> getAllUsers(){

@@ -5,9 +5,10 @@ import org.springframework.stereotype.Repository;
 import tanquoc73.app.entity.Word;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface WordRepository extends JpaRepository<Word, Long> {
-    List<Word> findByHskLevel(String hskLevel);
-    List<Word> findByCategory(String category);
+    List<Word> findByHskLevel(Integer hskLevel);
+    Optional<Word> findByHanziAndPinyin(String hanzi, String pinyin);
 }

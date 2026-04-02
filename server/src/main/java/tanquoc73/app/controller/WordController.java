@@ -22,7 +22,7 @@ public class WordController {
     }
 
     @GetMapping("/hsk/{level}")
-    public ResponseEntity<List<Word>> getWordsByHskLevel(@PathVariable String level) {
+    public ResponseEntity<List<Word>> getWordsByHskLevel(@PathVariable Integer level) {
         return ResponseEntity.ok(wordService.getWordsByHskLevel(level));
     }
 

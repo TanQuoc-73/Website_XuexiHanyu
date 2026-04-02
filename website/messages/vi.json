@@ -25,7 +25,56 @@
     "hsk6Desc": "Trình độ cao cấp, thành thạo như người bản xứ.",
     "vocabularyDesc": "Học từ vựng theo chủ đề và cấp độ.",
     "grammarDesc": "Chi tiết các cấu trúc ngữ pháp quan trọng.",
-    "dictionaryDesc": "Tra cứu nhanh Trung-Việt, Việt-Trung."
+    "dictionaryDesc": "Tra cứu nhanh Trung-Việt, Việt-Trung.",
+    "login": "Đăng nhập",
+    "register": "Đăng ký"
+  },
+  "lessons": {
+    "title": "Lộ trình học HSK",
+    "subtitle": "Chọn cấp độ phù hợp để bắt đầu hành trình chinh phục tiếng Trung của bạn.",
+    "levelTitle": "Cấp độ {level}",
+    "wordsCount": "{count} từ vựng",
+    "grammarCount": "{count} điểm ngữ pháp",
+    "startNow": "Bắt đầu ngay",
+    "continue": "Tiếp tục học"
+  },
+  "grammar": {
+    "title": "Kho Ngữ pháp",
+    "subtitle": "Hệ thống hóa toàn bộ cấu trúc tiếng Trung từ cơ bản đến nâng cao.",
+    "searchPlaceholder": "Tìm kiếm cấu trúc (ví dụ: 把, 了, cấu trúc câu...)",
+    "categories": {
+      "all": "Tất cả",
+      "basic": "Cơ bản",
+      "sentence": "Cấu trúc câu",
+      "particle": "Trợ từ",
+      "complement": "Bổ ngữ"
+    }
+  },
+  "practice": {
+    "title": "Trung tâm Luyện tập",
+    "subtitle": "Cải thiện kỹ năng qua các bài tập tương tác đa dạng.",
+    "modes": {
+      "flashcards": "Thẻ ghi nhớ",
+      "quiz": "Trắc nghiệm",
+      "writing": "Luyện viết chữ",
+      "listening": "Luyện nghe"
+    }
+  },
+  "dictionary": {
+    "title": "Từ điển Trung - Việt",
+    "subtitle": "Tra cứu nhanh chóng, chính xác với đầy đủ ví dụ và âm thanh.",
+    "searchPlaceholder": "Nhập chữ Hán, Pinyin hoặc nghĩa tiếng Việt...",
+    "recent": "Tìm kiếm gần đây",
+    "noResults": "Không tìm thấy kết quả phù hợp."
+  },
+  "register": {
+    "title": "Tham gia cùng Panda",
+    "subtitle": "Tạo tài khoản để lưu lại tiến độ học tập và mở khóa các tính năng nâng cao.",
+    "name": "Họ và tên",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "term": "Bằng cách đăng ký, bạn đồng ý với Điều khoản dịch vụ và Chính sách bảo mật của chúng tôi."
   },
   "auth": {
     "login": "Đăng nhập",

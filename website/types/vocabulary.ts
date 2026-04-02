@@ -1,21 +1,31 @@
+export interface Category {
+  id: number;
+  name: string;
+}
+
+export interface Sentence {
+  id: number;
+  sentence: string;
+  pinyin: string;
+  translationVi: string;
+  translationEn: string;
+}
+
 export interface VocabWord {
-  id: string;
+  id: number;
   hanzi: string;
   pinyin: string;
-  meaning: string;
+  meaningVi: string;
+  meaningEn: string;
   hskLevel: number;
-  category: string;
-  exampleSentence?: string;
-  examplePinyin?: string;
-  exampleMeaning?: string;
+  category: Category;
+  sentences: Sentence[];
   audioUrl?: string;
   strokeOrder?: string[];
 }
 
 export interface VocabCategory {
-  id: string;
+  id: number;
   name: string;
-  nameZh: string;
-  icon: string;
-  wordCount: number;
+  wordCount?: number;
 }

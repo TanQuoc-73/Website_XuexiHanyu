@@ -1,7 +1,10 @@
 package tanquoc73.app.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "words")
@@ -17,22 +20,32 @@ public class Word {
     private Long id;
 
     @Column(nullable = false)
-    private String hanzi; // 汉字
+    private String hanzi;
 
     @Column(nullable = false)
-    private String pinyin; // Pinyin
+    private String pinyin;
 
-    @Column(nullable = false)
-    private String meaningVi; // Vietnamese meaning
+    @Column(name = "meaning_vi", columnDefinition = "TEXT")
+    private String meaningVi;
 
-    @Column(nullable = false)
-    private String meaningEn; // English meaning
+    @Column(name = "meaning_en", columnDefinition = "TEXT")
+    private String meaningEn;
 
-    private String exampleSentence; // Example sentence in Chinese
-    private String examplePinyin; // Pinyin for example sentence
-    private String exampleVi; // Vietnamese translation of example
-    private String exampleEn; // English translation of example
+    @Column(name = "hsk_level")
+    private Integer hskLevel;
 
-    private String hskLevel; // HSK Level (1-6)
-    private String category; // e.g., "Noun", "Verb", "Greeting"
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    @OneToMany(mappedBy = "word", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Sentence> sentences;
+
+    @OneToMany(mappedBy = "word", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<UserWordProgress> progressList;
+
+    @OneToMany(mappedBy = "word", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<QuizHistory> quizHistories;
 }

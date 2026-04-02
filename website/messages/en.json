@@ -25,7 +25,56 @@
     "hsk6Desc": "Master the language like a native speaker.",
     "vocabularyDesc": "Learn words by theme and HSK level.",
     "grammarDesc": "Detailed explanation of core structures.",
-    "dictionaryDesc": "Quick Chinese-English-Vietnamese lookup."
+    "dictionaryDesc": "Quick Chinese-English-Vietnamese lookup.",
+    "login": "Sign in",
+    "register": "Sign up"
+  },
+  "lessons": {
+    "title": "HSK Learning Path",
+    "subtitle": "Choose the right level to begin your journey to mastering Chinese.",
+    "levelTitle": "Level {level}",
+    "wordsCount": "{count} words",
+    "grammarCount": "{count} points",
+    "startNow": "Start Now",
+    "continue": "Continue"
+  },
+  "grammar": {
+    "title": "Grammar Hub",
+    "subtitle": "Systematize all Chinese structures from basic to advanced.",
+    "searchPlaceholder": "Search structures (e.g., 把, 了, sentence patterns...)",
+    "categories": {
+      "all": "All",
+      "basic": "Basic",
+      "sentence": "Patterns",
+      "particle": "Particles",
+      "complement": "Complements"
+    }
+  },
+  "practice": {
+    "title": "Practice Center",
+    "subtitle": "Improve your skills through various interactive exercises.",
+    "modes": {
+      "flashcards": "Flashcards",
+      "quiz": "Quiz",
+      "writing": "Writing",
+      "listening": "Listening"
+    }
+  },
+  "dictionary": {
+    "title": "Chinese Dictionary",
+    "subtitle": "Quick and accurate lookup with full examples and audio.",
+    "searchPlaceholder": "Enter Hanzi, Pinyin or meaning...",
+    "recent": "Recent Searches",
+    "noResults": "No results found."
+  },
+  "register": {
+    "title": "Join Panda",
+    "subtitle": "Create an account to save your progress and unlock premium features.",
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "term": "By signing up, you agree to our Terms of Service and Privacy Policy."
   },
   "auth": {
     "login": "Sign in",

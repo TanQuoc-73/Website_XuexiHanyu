@@ -3,30 +3,17 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
-type Word = {
-  id: number;
-  hanzi: string;
-  pinyin: string;
-  meaningVi: string;
-  meaningEn: string;
-  exampleSentence: string;
-  examplePinyin: string;
-  exampleVi: string;
-  exampleEn: string;
-  hskLevel: string;
-  category: string;
-};
+import { vocabularyService } from "@/services/vocabulary-service";
+import type { VocabWord } from "@/types/vocabulary";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-async function getWords(): Promise<Word[]> {
+async function getWords(): Promise<VocabWord[]> {
   try {
-    const res = await fetch("http://localhost:8080/api/words", { cache: "no-store" });
-    if (!res.ok) return [];
-    return res.json();
+    const res = await vocabularyService.getAll();
+    return res;
   } catch (error) {
     console.error("Failed to fetch words:", error);
     return [];
@@ -53,7 +40,7 @@ export default async function VocabularyPage({ params }: Props) {
                       HSK {word.hskLevel}
                     </Badge>
                     <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                      {word.category}
+                      {word.category?.name || "N/A"}
                     </span>
                   </div>
                   <div className="mt-4 flex flex-col items-center text-center">
@@ -72,16 +59,20 @@ export default async function VocabularyPage({ params }: Props) {
                       </p>
                     </div>
                     
-                    {word.exampleSentence && (
-                      <div className="rounded-lg bg-muted/50 p-3">
-                        <p className="text-xs font-bold text-muted-foreground uppercase mb-2">
-                          {locale === "vi" ? "Ví dụ" : "Example"}
+                    {word.sentences && word.sentences.length > 0 && (
+                      <div className="space-y-3">
+                        <p className="text-xs font-bold text-muted-foreground uppercase">
+                          {locale === "vi" ? "Ví dụ" : "Examples"}
                         </p>
-                        <p className="text-base font-medium">{word.exampleSentence}</p>
-                        <p className="text-sm text-muted-foreground italic">[{word.examplePinyin}]</p>
-                        <p className="mt-1 text-sm">
-                          {locale === "vi" ? word.exampleVi : word.exampleEn}
-                        </p>
+                        {word.sentences.map((s) => (
+                          <div key={s.id} className="rounded-lg bg-muted/50 p-3">
+                            <p className="text-base font-medium">{s.sentence}</p>
+                            <p className="text-sm text-muted-foreground italic">[{s.pinyin}]</p>
+                            <p className="mt-1 text-sm">
+                              {locale === "vi" ? s.translationVi : s.translationEn}
+                            </p>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>
